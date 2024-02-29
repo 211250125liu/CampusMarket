@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">南哪集市</string>
+    <string name="title_home">Home</string>
+    <string name="title_sell">Dashboard</string>
+    <string name="title_user">Notifications</string>
+    <string name="button_login">登陆</string>
+    <string name="edittext_password">密码</string>
+    <string name="edittext_StudentId">学号</string>
+</resources>

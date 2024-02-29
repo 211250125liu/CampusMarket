@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- activity_review.xml -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageAvatar"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/header1"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/textUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imageAvatar"
+                android:layout_marginStart="8dp"
+                android:text="Username"
+                android:textSize="18sp"
+                android:layout_alignTop="@+id/imageAvatar"/>
+
+            <TextView
+                android:id="@+id/emailAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textUsername"
+                android:layout_toEndOf="@+id/imageAvatar"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:text="Email address"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/textComment1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emailAddress"
+                android:layout_marginTop="16dp"
+                android:text="评价"
+                android:textColor="#800080"
+                android:textSize="18sp"/>
+
+
+
+            <!-- RecyclerView for reviews -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewReviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textComment1"
+                android:layout_marginTop="16dp"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

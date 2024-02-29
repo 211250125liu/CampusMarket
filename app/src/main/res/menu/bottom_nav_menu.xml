@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="主页" />
+
+    <item
+        android:id="@+id/navigation_sell"
+        android:icon="@drawable/sell_foreground"
+        android:title="售卖" />
+
+    <item
+        android:id="@+id/navigation_user"
+        android:icon="@drawable/icons8_user_50"
+        android:title="我的" />
+
+</menu>

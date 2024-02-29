@@ -1,0 +1,49 @@
+<!-- res/layout/item_product.xml -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- 商品图片 -->
+    <ImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground"
+    />
+
+    <!-- 商品名称 -->
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/imageViewProduct"
+        android:layout_marginLeft="8dp"/>
+
+    <!-- 商品价格 -->
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_below="@id/textViewName"
+        android:layout_toRightOf="@id/imageViewProduct"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"/>
+
+    <!-- 商品简短介绍 -->
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_below="@id/textViewPrice"
+        android:layout_toRightOf="@id/imageViewProduct"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"/>
+</RelativeLayout>
